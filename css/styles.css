@@ -41,6 +41,25 @@ h2 {
   margin-bottom: 50px;
 }
 
+.button {
+  width: 200px;
+  height: 50px;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--primary-white-color);
+}
+
 .visibility-hidden {
   visibility: hidden;
   position: absolute;
@@ -200,23 +219,6 @@ h2 {
   margin-right: auto;
   width: 696px;
   letter-spacing: 0.06em;
-}
-
-.button {
-  background-color: var(--title-text-color);
-  color: var(--primary-white-color);
-  cursor: pointer;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  display: inline-block;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
-  font-family: Roboto;
-  border-radius: 4px;
-  border: 0;
-  padding: 10px 32px 10px 32px;
 }
 
 /* секция скилов */
@@ -455,7 +457,7 @@ h2 {
   justify-content: center;
 }
 
-.cliens__link:hover,
+.clients__link:hover,
 .clients__link:focus {
   border: 1px solid var(--accent-color);
 }
@@ -514,12 +516,12 @@ footer {
   color: var(--accent-color);
 }
 
-.footer-list-box {
+.footer__list-box {
   margin-left: 70px;
   padding-top: 12px;
 }
 
-.footer-title {
+.footer__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -529,20 +531,20 @@ footer {
   margin-bottom: 20px;
 }
 
-.footer-list {
+.footer__list {
   display: flex;
   padding-left: 0;
 }
 
-.footer-item {
+.footer__item {
   margin-right: 10px;
 }
 
-.footer-item:nth-child(4n) {
+.footer__item:nth-child(4n) {
   margin-right: 0px;
 }
 
-.footer-social-link {
+.footer__social--link {
   display: block;
   width: 44px;
   height: 44px;
@@ -554,30 +556,30 @@ footer {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-social-link:nth-child(4n) {
+.footer__social--link:nth-child(4n) {
   margin-right: 0px;
 }
 
-.footer-social-link:focus,
-.footer-social-link:hover {
+.footer__social--link:focus,
+.footer__social--link:hover {
   background-color: var(--accent-color);
 }
 
-.footer-social-network {
+.footer__social-network {
   display: block;
   width: 20px;
   height: 20px;
   fill: var(--primary-white-color);
 }
 
-.footer-form {
+.footer__form {
   display: flex;
   flex-direction: column;
   margin-left: auto;
   padding-top: 12px;
 }
 
-.footer-label {
+.footer__label {
   display: block;
   margin-bottom: 20px;
   font-weight: 700;
@@ -589,11 +591,11 @@ footer {
   color: var(--primary-white-color);
 }
 
-.footer-form-box {
+.footer__form-box {
   display: flex;
 }
 
-.footer-input {
+.footer__input {
   width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -606,40 +608,17 @@ footer {
   color: var(--primary-white-color);
 }
 
-.footer-input::placeholder {
+.footer__input::placeholder {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
 }
 
-.footer-label-button {
-  width: 200px;
-  height: 50px;
-  background-color: var(--title-text-color);
-  border-radius: 4px;
-  border: 0;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 1.87;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-}
-
-.footer-button-text {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
-  color: var(--primary-white-color);
-  margin-right: 10px;
-}
-
-.footer-button-ikon {
+.footer__button--ikon {
   height: 24px;
   width: 24px;
   fill: var(--primary-white-color);
+  margin-left: 10px;
 }
 
 /* портфолио */
@@ -656,7 +635,15 @@ footer {
   margin-bottom: 50px;
 }
 
-.portfolio button {
+.list-buttons__item {
+  margin-right: 8px;
+}
+
+.list-buttons__item:nth-child(5n) {
+  margin-right: 0;
+}
+
+.list-buttons__btn {
   background-color: #f5f4fa;
   color: var(--primary-text-color);
   font-weight: 500;
@@ -674,16 +661,8 @@ footer {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.list-buttons > li {
-  margin-right: 8px;
-}
-
-.list-buttons > li:nth-child(5n) {
-  margin-right: 0;
-}
-
-.portfolio button:hover,
-.portfolio button:focus {
+.list-buttons__btn:hover,
+.list-buttons__btn:focus {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -738,26 +717,26 @@ footer {
   transform: translateY(0);
 }
 
-.card-content {
+.card__content {
   padding: 20px 24px;
 }
 
-.cards > li {
+.cards__item {
   margin-right: 30px;
   margin-bottom: 30px;
   width: calc((100% - 60px) / 3);
   border: 1px solid #eeeeee;
 }
 
-.cards > li:nth-child(3n) {
+.cards__item:nth-child(3n) {
   margin-right: 0;
 }
 
-.cards > li:nth-last-child(-n + 3) {
+.cards__item:nth-last-child(-n + 3) {
   margin-bottom: 0;
 }
 
-.portfolio h3 {
+.card__title {
   color: var(--primary-text-color);
   font-weight: 700;
   font-size: 18px;
@@ -765,12 +744,14 @@ footer {
   margin-bottom: 4px;
 }
 
-.portfolio .card-content-text {
+.card__text {
   color: var(--primary-black-color);
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
 }
+
+/* ===========Модальное окно========= */
 
 .backdrop {
   position: fixed;
@@ -815,7 +796,7 @@ footer {
   justify-content: center;
 }
 
-.icon-close {
+.close-btn__icon {
   width: 30px;
   height: 30px;
   transition-property: fill;
@@ -823,11 +804,11 @@ footer {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.close-btn:hover .icon-close {
+.close-btn:hover .close-btn__icon {
   fill: var(--accent-color);
 }
 
-.modal-title {
+.modal__title {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
@@ -837,12 +818,12 @@ footer {
   margin-bottom: 12px;
 }
 
-.modal-form {
+.modal__form {
   display: flex;
   flex-direction: column;
 }
 
-.modal-label {
+.modal__label {
   margin-bottom: 4px;
   font-size: 12px;
   line-height: 1.16;
@@ -851,11 +832,11 @@ footer {
   cursor: pointer;
 }
 
-.modal-input-box {
+.modal__input-box {
   position: relative;
 }
 
-.input {
+.modal__input {
   margin-bottom: 10px;
   height: 40px;
   width: 448px;
@@ -869,12 +850,12 @@ footer {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.input:focus,
-.input:hover {
+.modal__input:focus {
   border: 1px solid var(--accent-color);
+  outline: none;
 }
 
-.modal-input-ikon {
+.modal__ikon {
   width: 18px;
   height: 18px;
   fill: var(--primary-text-color);
@@ -887,12 +868,11 @@ footer {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.input:focus + .modal-input-ikon,
-.input:hover + .modal-input-ikon {
+.modal__input:focus + .modal__ikon {
   fill: var(--accent-color);
 }
 
-.input-comment {
+.modal__comment {
   margin-bottom: 20px;
   min-height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -907,20 +887,20 @@ footer {
   transition-property: border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
 }
 
-.input-comment:hover,
-.input-comment:focus {
+.modal__comment:focus {
   border: 1px solid var(--accent-color);
 }
 
-.checkbox-box {
+.checkbox__tumb {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
 }
-.checkbox-label {
+.checkbox__label {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -958,37 +938,14 @@ footer {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.label-link {
+.checkbox__link {
   color: var(--title-text-color);
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
 
-.checkbox-label {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: #757575;
-}
-
-.modal-button {
-  width: 200px;
-  height: 50px;
-  background: #2196f3;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  border: 0;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-  cursor: pointer;
-}
-
-.modal-button-text {
+.modal__button {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;

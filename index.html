@@ -9,7 +9,7 @@
         rel="stylesheet">
         <link rel="stylesheet"
          href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
 
@@ -45,7 +45,7 @@
 
         <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
         
-        <button type="button" class="button" data-modal-open>Заказать услугу</button>
+        <button type="button" class="hero__button button" data-modal-open>Заказать услугу</button>
         
         </div>
     </section>
@@ -348,36 +348,35 @@
                         <a href="tel:+380961111111" class="address__connect tel">+38 096 111 11 11</a>
                     </address>
                 </div>
-                <div class="footer-list-box">
-                    <p class="footer-title">присоединяйтесь</p>
-                    <ul class="footer-list">
-                        <li class="footer-item">
-                            <a href="https://www.instagram.com/" class="footer-social-link"><svg class="footer-social-network">
+                <div class="footer__list-box">
+                    <p class="footer__title">присоединяйтесь</p>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="https://www.instagram.com/" class="footer__social--link"><svg class="footer__social-network">
                                     <use href="./images/icons.svg#icon-instagram"></use>
                                      
                                 </svg></a>
                         </li>
-                        <li class="footer-item"><a href="https://twitter.com/" class="footer-social-link"><svg class="footer-social-network">
-                                    <use href="./images/icons.svg#icon-twitter">
-                                    </use>
+                        <li class="footer__item"><a href="https://twitter.com/" class="footer__social--link"><svg class="footer__social-network">
+                                    <use href="./images/icons.svg#icon-twitter"></use>
                                 </svg></a>
                         </li>
-                        <li class="footer-item"><a href="https://www.facebook.com/" class="footer-social-link"><svg class="footer-social-network">
+                        <li class="footer__item"><a href="https://www.facebook.com/" class="footer__social--link"><svg class="footer__social-network">
                                     <use href="./images/icons.svg#icon-facebook">
                                     </use>
                                 </svg></a>
                         </li>
-                        <li class="footer-item"><a href="https://www.linkedin.com/" class="footer-social-link"><svg class="footer-social-network">
+                        <li class="footer__item"><a href="https://www.linkedin.com/" class="footer__social--link"><svg class="footer__social-network">
                                     <use href="./images/icons.svg#icon-linkedin"></use>
                                 </svg></a>
                         </li>
                     </ul>
                 </div>
-                <form class="footer-form">
-                    <label for="footer-email" class="footer-label">Подпишитесь на рассылку</label>
-                        <div class="footer-form-box">
-                            <input type="email" id="footer-email" name="email" placeholder="E-mail" class="footer-input">
-                            <button type="submit" class="footer-label-button"><span class="footer-button-text">Подписаться</span><svg class="footer-button-ikon">
+                <form class="footer__form">
+                    <label for="footer-email" class="footer__label">Подпишитесь на рассылку</label>
+                        <div class="footer__form-box">
+                            <input type="email" id="footer-email" name="email" placeholder="E-mail" class="footer__input">
+                            <button type="submit" class="footer__button button">Подписаться<svg class="footer__button--ikon">
                                 <use href="./images/icons.svg#icon-icon-send">
                                 </use>
                             </svg></button>
@@ -390,43 +389,43 @@
 
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <button type="button" class="close-btn" data-modal-close><svg class="icon-close">
+            <button type="button" class="close-btn" data-modal-close><svg class="close-btn__icon">
                 <use href="./images/icons.svg#icon-close-black"></use>
             </svg>
         </button>
-        <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
-        <form action="" class="modal-form">
+        <p class="modal__title">Оставьте свои данные, мы вам перезвоним</p>
+        <form action="" class="modal__form">
             
-                <label for="user-name" class="modal-label">Имя</label>
-                <div class="modal-input-box">
-                <input type="name" id="user-name" name="user-name" placeholder="" class="input">
-                <svg class="modal-input-ikon">
+                <label for="user-name" class="modal__label">Имя</label>
+                <div class="modal__input-box">
+                <input type="name" id="user-name" name="user-name" placeholder="" class="modal__input">
+                <svg class="modal__ikon">
                     <use href="./images/icons.svg#icon-person-black"></use>
                 </svg>
             </div>
             
-                <label for="user-tel" class="modal-label">Телефон</label>
-                <div class="modal-input-box">
-                <input type="tel" id="user-tel" name="user-tel" placeholder="" class="input">
-                <svg class="modal-input-ikon">
+                <label for="user-tel" class="modal__label">Телефон</label>
+                <div class="modal__input-box">
+                <input type="tel" id="user-tel" name="user-tel" placeholder="" class="modal__input">
+                <svg class="modal__ikon">
                     <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
                 </svg>
             </div>
             
-                <label for="user-email" class="modal-label">Почта</label>
-                <div class="modal-input-box">
-                <input type="email" id="user-email" name="user-email" placeholder="" class="input">
-                <svg class="modal-input-ikon">
+                <label for="user-email" class="modal__label">Почта</label>
+                <div class="modal__input-box">
+                <input type="email" id="user-email" name="user-email" placeholder="" class="modal__input">
+                <svg class="modal__ikon">
                     <use href="./images/icons.svg#icon-email-black"></use>
                 </svg>
             </div>
-            <label for="user-comment" class="modal-label">Комментарий</label>
-            <textarea type="text" id="user-comment" name="user-comment" placeholder="Введите текст" rows="5" class="input-comment"></textarea>
-            <div class="checkbox-box">
-            <label for="checkbox" class="checkbox-label"><input type="checkbox" name="checkbox" id="checkbox" value="Соглашаюсь с рассылкой и принимаю" class="checkbox">
-            <span class="check"></span>Соглашаюсь с рассылкой и принимаю  <a href="" class="label-link">Условия договора</a></label>
+            <label for="user-comment" class="modal__label">Комментарий</label>
+            <textarea type="text" id="user-comment" name="user-comment" placeholder="Введите текст" rows="5" class="modal__comment"></textarea>
+            <div class="checkbox__tumb">
+            <label for="checkbox" class="checkbox__label"><input type="checkbox" name="checkbox" id="checkbox" value="Соглашаюсь с рассылкой и принимаю" class="checkbox visibility-hidden">
+            <span class="check"></span>Соглашаюсь с рассылкой и принимаю  <a href="" class="checkbox__link">Условия договора</a></label>
             </div>
-            <button type="submit" class="modal-button"><span class="modal-button-text">Отправить</span></button>
+            <button type="submit" class="modal-button button"><span class="modal-button-text">Отправить</span></button>
             
         </form>
         </div>
